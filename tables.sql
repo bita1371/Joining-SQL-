@@ -3,21 +3,6 @@
 
 # Create the Lead Data table
 
-CREATE TABLE new_lead_data (
-    lead_id INT ,
-    lead_date datetime,
-    score INT,
-    marketing_channel VARCHAR(50)
-);
-
-# Create the Marketing Data table
-CREATE TABLE Marketing (
-    date DATE,
-    marketing_channel VARCHAR(50),
-    impressions INT,
-    clicks INT,
-    cost DECIMAL(10, 2)
-);
 
 ALTER TABLE new_lead_data
 MODIFY COLUMN lead_date DATE;
